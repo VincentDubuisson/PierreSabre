@@ -36,9 +36,9 @@ public class Yakuza extends Humain{
 		reputation += 1;
 		parler("Ce ronin pensait vraiment battre " + getNom() + " du clan " 
 		+ clan + "? Je l'ai dépouillé de ses " + gain + " sous.");
-		
-		
-		
 	}
-
+	
+	public int getReputation() {
+		return reputation;
+	}
 }
