@@ -77,19 +77,19 @@ public class Humain {
 
 	public void listerConnaissance() {
 
-		String text = "Je connais beaucoup de monde dont: ";
+		String str = "Je connais beaucoup de monde dont: ";
 
 		for (int i = 0; i < memoire.length; i++) {
 			if (memoire[i] != null) {
-				text += memoire[i].getNom();
-				if (memoire.length <= i) {
+				str += memoire[i].getNom();
+				if (i + 1 < memoire.length) {
 					if (memoire[i + 1] != null) {
-						text += ", ";
+						str += ", ";
 					}
 				}
 			}
 		}
-		parler(text);
+		parler(str);
 
 	}
 
