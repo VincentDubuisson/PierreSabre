@@ -30,7 +30,6 @@ public class Ronin extends Humain{
 			adversaire.gagner(argent);
 			perdreArgent(argent);
 			honneur--;
-			
 		}
 	}
 	
